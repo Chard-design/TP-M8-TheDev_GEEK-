@@ -1,8 +1,8 @@
 ﻿using System;
-
+using TP_M8_TheDev_GEEK;
 namespace TP_M8_TheDev_GEEK;
 
-class program
+class Program
 {
     static void Main()
     {
@@ -23,12 +23,24 @@ class program
 
             choix=int.Parse(Console.ReadLine());
             
-            Console.Clear();
-
-           
-           
+    
             
-        }while (choix !=0);
 
+            switch (choix)
+            {
+                case 1: gestion.AjouterSalle();
+                break;
+                case 2: gestion.ListerRessources();
+                break;
+                case 3: gestion.CreerReservation();
+                break;
+                case 4: gestion.ListerReservation();
+                break;
+            
+            }
+           
+         
+        }while (choix !=0);
+        Console.WriteLine("\n Appuyer sur enter pour revenir au menu");
     }
 }

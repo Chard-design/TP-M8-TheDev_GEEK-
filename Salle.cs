@@ -1,7 +1,10 @@
-
-
-class Salle : Ressource
+using System;
+using TP_M8_TheDev_GEEK;
+namespace TP_M8_TheDev_GEEK
 {
+
+  class Salle : Ressource
+ {
     public int Capacite {get;}
 
     public Salle(int id,string responsable,string nom)
@@ -10,6 +13,7 @@ class Salle : Ressource
     Capacite= Capacite;
     }
     public override string Type()=> "Salle";
+    
 
     public override void Afficher()
     {
@@ -17,6 +21,6 @@ class Salle : Ressource
         Console.WriteLine($"Capacite : {Capacite}personnes");
         Console.WriteLine("----------------------");
     }
-        
+ }     
 
 }
